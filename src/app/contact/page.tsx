@@ -1,84 +1,21 @@
 'use client';
 
 import React from 'react';
-import SpaceBackground from '../components/SpaceBackground';
-import Navbar from '../components/Navbar';
+import SpaceBackground from '../../components/SpaceBackground';
+import Navbar from '../../components/Navbar';
 import { motion } from 'framer-motion';
 
-export default function Home() {
+export default function Contact() {
   return (
     <main className="relative min-h-screen">
       <SpaceBackground />
       <Navbar />
       
       <div className="container mx-auto px-4 py-16 mt-16">
-        {/* Overview Section */}
         <motion.section
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="mb-20"
-        >
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-600 text-transparent bg-clip-text">
-            LLM 및 Multi-Agent 전문가
-          </h1>
-          <div className="bg-gray-900/50 p-8 rounded-lg backdrop-blur-sm">
-            <p className="text-xl text-gray-300 mb-6">
-              저는 <strong>데이터와 분석이라는 일관된 길</strong>을 걸으며 AI와 데이터 사이언스 분야의 전문성을 쌓아왔습니다. 직접 개발한 AI 솔루션으로 <strong>IR52 장영실상</strong> 빅데이터 부문을 수상하여 기술적 전문성과 혁신성을 인정받았습니다. 노력 및 경험으로 축적된 문제 해결 능력과 열정을 바탕으로, 귀사의 AI 기술 경쟁력 강화를 위해 노력하겠습니다. 향후 <strong>Advanced LLM/멀티모달</strong>, <strong>자율 AI 에이전트</strong>의 연구/활용을 통해 데이터 기반의 기술 혁신을 주도하며 비즈니스 성과 향상 및 기술 도약을 이끌어내겠습니다.
-            </p>
-            <div className="flex flex-wrap gap-2 mb-8">
-              <span className="px-4 py-2 bg-gray-800/50 rounded-full text-sm">#LLM전문가</span>
-              <span className="px-4 py-2 bg-gray-800/50 rounded-full text-sm">#Agent개발</span>
-              <span className="px-4 py-2 bg-gray-800/50 rounded-full text-sm">#장영실상수상</span>
-              <span className="px-4 py-2 bg-gray-800/50 rounded-full text-sm">#AI솔루션</span>
-              <span className="px-4 py-2 bg-gray-800/50 rounded-full text-sm">#데이터사이언스</span>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-            <div className="bg-gray-900/50 p-6 rounded-lg backdrop-blur-sm">
-              <h3 className="text-xl font-semibold mb-4">분야</h3>
-              <ul className="text-gray-300 space-y-2">
-                <li>• LLM(Large Language Model)</li>
-                <li>• Multi-agent 시스템 개발</li>
-                <li>• Machine Learning</li>
-                <li>• Data architecture / Engineering</li>
-              </ul>
-            </div>
-            <div className="bg-gray-900/50 p-6 rounded-lg backdrop-blur-sm">
-              <h3 className="text-xl font-semibold mb-4">자격사항</h3>
-              <ul className="text-gray-300 space-y-2">
-                <li>• 2018.08 IR52 장영실상 수상 [빅데이터 부문]</li>
-                <li>• 2012.07 데이터아키텍처전문가(DAP)</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-            <div className="bg-gray-900/50 p-6 rounded-lg backdrop-blur-sm">
-              <h3 className="text-xl font-semibold mb-4">교육사항</h3>
-              <ul className="text-gray-300 space-y-2">
-                <li>• 서울시립대학교 대학원 마케팅공학 석사 졸업 (2003.03 ~ 2005.02)</li>
-                <li>• 서울시립대학교 경영학 학사 졸업 (1996.03 ~ 2003.02)</li>
-              </ul>
-            </div>
-            <div className="bg-gray-900/50 p-6 rounded-lg backdrop-blur-sm">
-              <h3 className="text-xl font-semibold mb-4">경력사항</h3>
-              <ul className="text-gray-300 space-y-2">
-                <li>• 2022.08 ~ 2025.03 지엔아이티</li>
-                <li>• 2013.06 ~ 2020.09 비아이매트릭스</li>
-                <li>• 2008.07 ~ 2013.04 이씨마이너</li>
-              </ul>
-            </div>
-          </div>
-        </motion.section>
-
-        {/* Contact Section */}
-        <motion.section
-          id="contact"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 1.2, duration: 0.8 }}
+          transition={{ duration: 0.8 }}
           className="text-center"
         >
           <h2 className="text-3xl font-bold mb-8">🌟 Let's Connect</h2>
