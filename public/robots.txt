@@ -1,4 +1,6 @@
+# Allow all crawlers
 User-agent: *
 Allow: /
 
-Sitemap: https://your-domain.com/sitemap.xml 
+# Sitemap location
+Sitemap: https://my-portfolio-site-chi-topaz.vercel.app/sitemap.xml 
